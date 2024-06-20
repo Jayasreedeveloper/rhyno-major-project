@@ -1,0 +1,539 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0;
+}
+
+.nav-cont{
+    font-family: poppins;
+    width: 100vw;
+    overflow: hidden;
+    background-color:  #FFF225;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-img{
+    width:200px;
+    height: 100px;
+    animation: logo-anim 1s 2;
+}
+.logo-img:hover{
+    animation: logo-anim-hover 1s infinite;
+}
+
+@keyframes logo-anim{
+    0%{
+        opacity: 1;
+        transform: rotate(0);
+    }
+    50%{
+        opacity: 0;
+        transform: rotate(30deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+@keyframes logo-anim-hover{
+    0%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+.nav-cont > ul{
+    display: flex;
+    align-items: center;
+}
+.nav-cont > ul > li > a{
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #131313;
+    margin-right: 10px;
+    display: flex;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: #131313 5px 5px 5px;
+}
+
+.nav-cont > ul > li > a:hover{
+    color:  #EDEDED;
+    background-color: #414141;  
+    font-weight: bold;
+    border: white 1px solid;
+}
+.products-expand{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color:  #FFF225;
+    justify-content: center;
+    
+}
+.product-menu:hover .products-expand{
+    display: block;
+    color: #131313;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: #131313 5px 5px 5px;
+    
+}
+.products-expand>li>a{
+    text-decoration: none;
+    color:  #131313;
+    margin: 5px;
+    align-items: center;
+}
+.products-expand>li{
+    margin-bottom: 5px;
+}
+.products-expand>li:hover{
+    margin-top: 5px;
+    background-color: #414141;  
+    border: white 1px solid;
+    border-radius: 5px;
+}
+.products-expand>li>a:hover{
+    font-weight: bold;
+    color:  #EDEDED;
+
+}
+
+.home-cont{
+    background-color:  #202020;
+    width: 100%;
+    /* padding: 1%; */
+    font-family: calibri;
+}
+
+.front-line{
+    text-align: center;
+}
+#Home>div>h1{
+    color: #EDEDED;
+    font-weight: lighter;
+    font-size: 30px;
+
+}
+#last-word {
+    color: yellow;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px white ;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+b{
+    color: yellow;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px white ;
+    background-color: black;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#last-word::before{
+    content: "Style";
+    animation: repeat-word 5s infinite;
+}
+@keyframes repeat-word {
+    25%{
+        content: "Elegance";
+    }
+    50%{
+        content: "Minimalism";
+    }
+    75%{
+        content: "Comfort";
+    }
+}
+
+
+.carousel--cont{
+    width: 100%;
+}
+
+.rhino-product {
+    text-align: center;
+  }
+  
+  .rhino-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .w-100{
+    height: 800px;
+    width: 700px;
+  }
+  .rhino-option img {
+    width: 100%;
+    min-width: 50%;
+    object-fit: cover;
+  }
+  
+  .checkout-btn {
+    height: 50px;
+    width: auto;
+    padding: 10px 20px;
+    background-color:#FFF225;
+    color:#202020;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #fbfbfc;
+    color:#202020;
+
+  }
+
+  
+  /* pre-book form */
+  .prebook-cont{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* contact */
+  .contact-cont{
+    color: white;
+    font-family: lato;
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+    display: hidden;
+    /* text-align: center; */
+  }
+  .contact-cont span{
+    color: #FFF225;
+    font-size: 20px;
+    animation: cont-anim 2s;
+  }
+  @keyframes cont-anim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        }
+}
+
+/* about */
+.about-cont{
+    color: white;
+    font-family: lato;
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+}
+
+
+
+/* rotating carousel */
+.carousel--cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel {
+        /* text-align: center; */
+    /* align-items: center; */
+    color:#202020;
+    position: relative;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-right: 50px;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    /* background-color: #fbfbfc; */
+    border-radius: 2%;
+
+}
+
+.carousel-content {
+    /* margin-left: 50%; */
+    /* justify-content: center; */
+    width: 50%;
+    background-color:#FFF225;
+    border-radius: 2%;
+}
+
+.carousel-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel >h2 {
+    margin: 10px 0;
+}
+
+.carousel >p {
+    margin: 0;
+}
+
+
+.footer-cont{
+    margin: 0px;
+    font-family: poppins;
+    background-color:  #FFF225;
+    margin-top: 10px;
+    
+}
+.footer-cont > ul{
+    display: flex;
+    justify-content: space-evenly;
+
+    /* display: block; */
+}
+.footer-cont > ul >div> li > a{
+    text-decoration: none;
+    color: #131313;
+}
+.btn-pree{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    position: fixed;
+    background-color: yellow;
+    color: white;
+}
+
+.product-1,.product-2,.product-3{
+    color: #FFF225;
+    display: none;
+}
+
+#SE03Max:target{
+    display: block;
+}
+#SE03Lite:target{
+    display: block;
+}
+#SE03:target{
+    display: block;
+}
+
+.prod-imgs{
+    display: flex;
+    
+}
+.mod-1,.mod-2,.mod-3{
+    height: 500px;
+    width: 600px;
+}
+.clr-btn{
+    padding: 10px;
+    margin: 3px;
+    width: auto;
+    height: 30px;
+    text-align: center;
+}
+
+.spec-cont{
+    /* text-align: center; */
+    align-items: center;
+    display: inline;
+    justify-content: center;
+    
+}
+.spec-table{
+    background-color: #FFF225;
+    color: #202020;
+    margin-left: 25%;
+    padding: 5px;
+    width: 50%;
+    border-radius:10px;
+}
+
+.spec-table tr th{
+    font-family: lato;
+}
+
+#prebook{
+    position: relative;
+    overflow: hidden;
+}
+
+.spec-text{
+    color: white;
+    font-family: lato;
+    margin-left: 15%;
+    width: 70%;
+    height: auto;
+}
+
+.p-head{
+    color: yellow;
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px white ;
+    /* background-color: black; */
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* comparision */
+
+
+.cmpr-prod-cont{
+    margin: 15%;
+    width: 70%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: none;
+}
+#comp-page:target{
+    display: block;
+}
+#comp-menu:not(:checked) ~ #comp-page {
+    display: none;
+  }
+  
+.cmp-img{
+    width: 200px;
+}
+
+
+
+/* booking cont */
+#pre-booking{
+    width: 70%;
+    margin: 15%;
+    color: #fbfbfc;
+    border: #FFF225 solid 2px;
+    border-radius: 2%;
+    font-family: calibri;
+    text-align: center;
+    display: none;
+}
+#pre-booking:target{
+    display: block;
+}
+#pre-book-menu:not(:checked) ~ #pre-booking
+
+.booking-form{
+    background-color: #131313;
+}
+.form-group{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-group > input,.form-group> select{
+    width: 40%;
+    color: white;
+    background-color:#202020;
+    margin-left: 2%;
+    height: auto;
+    
+}
+
+#book-btn{
+    width: auto;
+    height: 50px;
+    font-size: medium;
+    color: black;
+    background-color: #FFF225;
+    border-radius: 5px;
+    border: white 2px solid;
+    text-shadow: 5px 5px 6px rgb(29, 28, 28);
+    margin: 5%;
+}
+
+/* pre-book button */
+#prebookbtn{
+    color: #FFF225;
+    position: fixed;
+    width: 20%;
+    left: 80%;
+    bottom: 10%;
+    border: white 3px solid;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #131313;
+    text-decoration: double;
+    text-shadow: 5px 5px 5px #ccc ;
+}
+#prebookbtn:hover{
+    background-color: #ccc;
+    color:#202020;
+    text-shadow: 5px 5px 5px #FFF225 ;
+    border:  #FFF225 3px solid;
+
+}
